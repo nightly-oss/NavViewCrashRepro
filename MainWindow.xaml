@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="NavViewCrashRepro.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+    mc:Ignorable="d">
+
+    <Window.SystemBackdrop>
+        <MicaBackdrop />
+    </Window.SystemBackdrop>
+
+    <NavigationView x:Name="NavView" PaneDisplayMode="Left">
+        <NavigationView.MenuItems>
+            <NavigationViewItem x:Name="WorkspacesMenu"
+                                     Content="Workspaces"
+                                     Icon="Folder" />
+        </NavigationView.MenuItems>
+
+        <StackPanel Spacing="8">
+            <Button Content="New WS" Click="CreateWorkspace_Click"/>
+            <Button Content="New Folder" Click="CreateFolder_Click"/>
+            <Button Content="Recolor" Click="RecolorFolder_Click"/>
+            <Button Content="Refresh" Click="Refresh_Click"/>
+        </StackPanel>
+    </NavigationView>
+</Window>

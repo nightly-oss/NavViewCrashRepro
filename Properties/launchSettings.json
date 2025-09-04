@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "NavViewCrashRepro (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "NavViewCrashRepro (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
